@@ -1,0 +1,33 @@
+{
+  "name": "byui-faculty-marketplace",
+  "displayName": "BYU-Idaho Faculty Pilot",
+  "description": "Faculty pilot plugins for essay grading, plugin compliance review, and safe Canvas messaging education.",
+  "version": "0.2.4",
+  "plugins": [
+    {
+      "id": "byui-essay-grader",
+      "displayName": "BYU-Idaho Essay Grader",
+      "description": "Grade essays with local rubrics.",
+      "version": "0.2.2",
+      "source": "existing-plugin",
+      "status": "external-existing-plugin",
+      "note": "Preserve the existing Essay-grader MCP connection. Add its source package or exact plugin ID before publishing this catalog as an installable marketplace."
+    },
+    {
+      "id": "plugin-compliance-reviewer",
+      "displayName": "Super App",
+      "description": "Review agent plugins against a university IT safety and governance baseline.",
+      "version": "0.2.4",
+      "source": "plugins/plugin-compliance-reviewer",
+      "status": "included"
+    },
+    {
+      "id": "faculty-canvas-messaging-educator",
+      "displayName": "Educator",
+      "description": "Teach safe Canvas audience selection and messaging through fictional practice.",
+      "version": "0.2.4",
+      "source": "plugins/faculty-canvas-messaging-educator",
+      "status": "included"
+    }
+  ]
+}

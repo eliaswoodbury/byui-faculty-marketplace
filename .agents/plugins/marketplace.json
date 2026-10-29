@@ -1,0 +1,44 @@
+{
+  "name": "byui-faculty-marketplace",
+  "interface": {
+    "displayName": "BYU-Idaho Faculty Pilot"
+  },
+  "plugins": [
+    {
+      "name": "essay-grader-mcp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/essay-grader-mcp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    },
+    {
+      "name": "plugin-compliance-reviewer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/plugin-compliance-reviewer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "faculty-canvas-messaging-educator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/faculty-canvas-messaging-educator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

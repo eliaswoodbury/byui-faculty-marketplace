@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "essay-grader-mcp",
+  "version": "0.1.2",
+  "description": "A local-first essay and assignment grading workspace.",
+  "author": { "name": "Local deployment" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "BYU-Idaho Essay Grader",
+        "shortDescription": "Grade essays locally",
+        "longDescription": "Keeps rubrics, submissions, and saved grades on the local computer while ChatGPT performs the grading analysis.",
+        "developerName": "BYU-Idaho Faculty Pilot",
+        "category": "Education",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Grade an essay or assignment using the selected local rubric. Explain the score with evidence from the submission and identify actionable improvements."
+      }
+    }
+  }
+}

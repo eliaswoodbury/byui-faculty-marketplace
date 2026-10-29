@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "faculty-canvas-messaging-educator",
+  "version": "0.2.4",
+  "description": "Teach faculty to use Canvas audience selection and messaging workflows safely through explanations, fictional practice, independent checks, and recovery rehearsal.",
+  "author": { "name": "OpenAI" },
+  "keywords": ["faculty training", "Canvas", "AI literacy", "fictional practice", "safe messaging"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Educator",
+        "shortDescription": "Practice safe Canvas messaging",
+        "longDescription": "Guides faculty through plain-language, fictional-data learning experiences for safe AI use, audience selection, approvals, wording, links, uncertainty recovery, accessibility, and value comparison without connecting to Canvas or sending messages.",
+        "developerName": "OpenAI",
+        "category": "Education",
+        "capabilities": [],
+        "defaultPrompt": "Teach me the Canvas messaging workflow using fictional data. Start with a concise overview, then guide me through the practice case one decision at a time and check my reasoning before revealing answers."
+      }
+    }
+  }
+}

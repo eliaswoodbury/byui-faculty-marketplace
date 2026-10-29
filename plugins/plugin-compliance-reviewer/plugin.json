@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "plugin-compliance-reviewer",
+  "version": "0.2.4",
+  "description": "Assess an agent plugin against a university IT safety and governance baseline and produce an advisory change list, approval gates, and remediation evidence.",
+  "author": { "name": "OpenAI" },
+  "keywords": ["plugin review", "security review", "privacy", "university IT", "compliance"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Super App",
+        "shortDescription": "Review plugins for IT safety",
+        "longDescription": "Reviews plugins for university security, privacy, safety, education, and compliance readiness. Produces plain-language findings and a prioritized change list; it does not modify plugins or certify them.",
+        "developerName": "OpenAI",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "defaultPrompt": "Review the attached plugin against the university IT compliance baseline. Separate verified facts, developer claims, unknowns, and findings, then give me approval gates and concrete remediation evidence."
+      }
+    }
+  }
+}

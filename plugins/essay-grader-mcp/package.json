@@ -1,0 +1,10 @@
+{
+  "name": "essay-grader-mcp",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-server.js"
+  }
+}
